@@ -20,10 +20,6 @@ variable "runtime" {
   type = string
 }
 
-variable "role_arn" {
-  type = string
-}
-
 variable "layers" {
   type    = list(string)
   default = []
@@ -51,5 +47,4 @@ variable "memory_size" {
 
 variable "architectures" {
   type    = list(string)
-  default = ["x86_64"]
 }
