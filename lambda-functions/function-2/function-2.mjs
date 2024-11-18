@@ -4,8 +4,8 @@ import pg from "pg";
 export async function handler(_event) {
   console.log("function-2 handler running...");
 
-  // we just imported pg package, we do not want to have a complicated setup
-  // if the pg package does not exists, then the function will throw an error
+  // The "pg" package has been imported. This setup is minimal and does not establish a connection to an actual database.
+  // If the "pg" package is not available, the function will throw an error.
   console.log("Simulating a database connection...");
 
   const response = await axios.get(
